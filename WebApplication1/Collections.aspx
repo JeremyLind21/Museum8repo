@@ -13,7 +13,7 @@
             <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="18pt" Text="Add Collection"></asp:Label>
         </p>
         <asp:Label ID="Label3" runat="server" Text="New Collection Name: "></asp:Label>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
         <br />
         <asp:Label ID="Label4" runat="server" Text="New Collection Author: "></asp:Label>
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>

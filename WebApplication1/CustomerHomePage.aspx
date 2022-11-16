@@ -6,55 +6,68 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body style ="background-color:#ffffe0">
     <form id="form1" runat="server">
-        <div>
-            <asp:Label ID="Label2" runat="server" style="font-size: xx-large" Text="Welcome! Please select any of the following buttons to reach the custom-made data entry form for you, our lovely customers!"></asp:Label>
-            <br />
-            <br />
-            <asp:Image ID="Image2" runat="server" ImageUrl="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.mfah.com%2Fimages%2Fmfah-film-box-office.471638529597915451.jpg%3Fwidth%3D1200%26height%3D630%26bgcolor%3Dblur&amp;f=1&amp;nofb=1&amp;ipt=32a7ccbad93d5d8b5ce329c268679d2933ff34090d0e8b85f7943b022941b6d7&amp;ipo=images" />
-            <br />
-            Tickets<br />
-            <asp:Button ID="Button1" runat="server" Text="Ticket Data Form" OnClick="Button1_Click" />
-            <br />
-            <asp:Label ForeColor="Red"  ID="Label1" runat="server" Text="Label"></asp:Label>
-            <br />
-            <asp:Image ID="Image1" runat="server" ImageUrl="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fculturemap-com%2Fimage%2Fupload%2Far_7%3A4%2Cc_fill%2Cg_faces%3Acenter%2Cw_980%2Fv1493149029%2Fphotos%2F214287_original.jpg&amp;f=1&amp;nofb=1&amp;ipt=6d0993a4862133b6035a257685963d08524f4ac65ffb93006989d489539e6e92&amp;ipo=images" style="margin-right: 0px" />
-            <br />
-            <br />
-            Events<br />
-            <asp:Button ID="Button2" runat="server" Text="Event Data Form " />
-            <br />
-            <br />
-            <br />
-            <br />
-            <asp:Label ID="Label3" runat="server" Text="Collections Test"></asp:Label>
-            <br />
-            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Collections" />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        </div>
+        <h1 style ="font-size:40px; font-style: italic;"; face = "Verdana"> MFA, The Museum Of Fine Arts
+            <asp:Button ID="CollectionsButton" runat="server" Text="Collections" OnClick="CollectionsButton_Click" />
+            <asp:Button ID="EventsButton" runat="server" Text="Events " Width="117px" />
+            <asp:Button ID="Button1" runat="server" Text="Films" OnClick="Button1_Click" />
+            <asp:Button ID="Button2" runat="server" Text="Exhibitions" />
+            <asp:Button ID="Button3" runat="server" Text="Tickets" />
+            <asp:Button ID="Button4" runat="server" Text="Memberships" />
+            <asp:Button ID="Button5" runat="server" Text="Merchandise" />
+            <asp:Button ID="Button6" runat="server" Text="Art" />
+            <asp:Button ID="Button7" runat="server" Text="Donate" />
+            <asp:Button ID="Button8" runat="server" Text="Members" />
+        </h1>
+    <p>
+        &nbsp;</p>
+    <p>
+        <asp:Label ID="Label2" runat="server" Font-Size="X-Large" Text="Exhibitions you might be interested in!"></asp:Label>
+        </p>
+        <asp:Image ID="Image1" runat="server" Height="371px" ImageUrl="https://static.mfah.com/images/ernie-barnes-sugar-shack.10513822464579747326.jpg?width=290&amp;height=290&amp;bgcolor=blur" Width="487px" ImageAlign="Left" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label style="font-size:40px" ID="Label1" runat="server" Text="The Sugar Shack: Through December 31, 2022" Font-Size="Large"></asp:Label>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Image ID="Image2" runat="server" Height="429px" ImageAlign="Right" ImageUrl="https://static.mfah.com/images/philip-guston-the-ladder.4037849941016239320.jpg?width=290&amp;height=290&amp;bgcolor=blur" Width="480px" />
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Label style="font-size:40px" ID="Label4" runat="server" Text="Philip Guston Now: Thorugh Jan 16, 2023" Font-Size="Large"></asp:Label>
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
     </form>
-</body>
+    </body>
 </html>

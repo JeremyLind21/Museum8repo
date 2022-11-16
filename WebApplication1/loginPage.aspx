@@ -17,26 +17,26 @@
         &nbsp;</p>
     <p>
         &nbsp;</p>
-    <div>
-        Hello<br />
-        <br />
-        <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
-        <br />
-        <br />
+        <div>
+            <br />
+            <br />
+            <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
+            <br />
+            <br />
 
 
         &nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
-        <br />
-        <br />
-        <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
-        <br />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="144px" />
-        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Create Customer Account" Width="215px" />
-        <br />
-        <asp:Label ID="Label3" runat="server" Text="Label" Visible="False"></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="144px" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Create Customer Account" Width="215px" />
+            <br />
+            <asp:Label ID="Label3" runat="server" Text="Label" Visible="False"></asp:Label>
         </div>
     </form>
     <p>

@@ -259,6 +259,52 @@ namespace WebApplication1
         {
 
         }
+
+        protected void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Search_Button_Click(object sender, EventArgs e)
+        {
+            //Search Button
+            SqlConnection museumConn = new SqlConnection("Server=tcp:museum.database.windows.net,1433;Initial Catalog=MuseumDB;Persist Security Info=False;User ID=JeremyL;Password=BabyThing1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            {
+                string searchCollectionName = TextBox5.Text;  //making SearchCollectionName the Name input
+                string searchCollectionAuthor = TextBox6.Text; //making SearchCollectionName the Author input
+                string searchCollectionLocation = TextBox7.Text; //making SearchCollectionName the Location input
+                SqlCommand com = new SqlCommand("museumSchema.SearchCollection");  //making 'com' the command Stored Procedure I made in SSMS
+                museumConn.Open();
+                com.Connection = museumConn;
+                com.CommandType = System.Data.CommandType.StoredProcedure;
+
+                if (searchCollectionName.Trim() != "")
+                {
+                    SqlParameter param = new SqlParameter("@SearchCollectionName", searchCollectionName);  //making 'param' the Name parameters
+                    com.Parameters.Add(param); //connecting parameteres to Stored Procedure command in SSMS
+
+                }
+                if (searchCollectionAuthor.Trim() != "")
+                {
+                    SqlParameter param2 = new SqlParameter("@SearchCollectionAuthor", searchCollectionAuthor); //making 'param2' the Name parameters
+                    com.Parameters.Add(param2); //connecting parameteres to Stored Procedure command in SSMS
+                }
+                if (searchCollectionLocation.Trim() != "")
+                {
+                    SqlParameter param3 = new SqlParameter("@SearchCollectionLocation", searchCollectionLocation); //making 'param3' the Name parameters
+                    com.Parameters.Add(param3); //connecting parameteres to Stored Procedure command in SSMS
+                }
+
+                SqlDataReader rdr = com.ExecuteReader(); //executing the Stored Procedure 'SELECT' command
+                //here if SQL command doesn't work it should bring you to an error page
+                //Label16.Visible = true; //making label visible
+                //Label16.Text = "New Collection Submission Successful (If no table then no results)"; //making label saying successful
+                //GridView2.DataSource = rdr;
+                //GridView2.DataBind();
+                //GridView3.DataSource = rdr;
+                //GridView3.DataBind();
+            }
+        }
     }
 }
 

@@ -163,5 +163,10 @@ namespace WebApplication1
                 Label23.Text = "Modify Collection Submission Successful"; //making label saying successful
             }
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -7,21 +7,31 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public partial class CustomerHomePage : System.Web.UI.Page
+    public partial class WebForm4 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Login_Click(object sender, EventArgs e)
         {
-           // Label1.Text = TextBox1.Text + ", welcome to Visual Studio!";
+            Response.Redirect("https://museuminterface.azurewebsites.net/Default.aspx");
+        }
+
+        protected void CollectionsButton_Click(object sender, EventArgs e)
+        {
+
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("https://museuminterface.azurewebsites.net/Collections.aspx");
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

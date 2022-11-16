@@ -8,6 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <body style ="background-color:#ffffe0">
         <div>
             <asp:Label ID="Label1" runat="server" Text="Location" Font-Overline="False" Font-Size="30pt"></asp:Label></div>
         <p>
@@ -19,10 +20,6 @@
         </p>
         <asp:Label ID="Label7" runat="server" Text="Building Name: "></asp:Label>
         <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-        <p>
-            <asp:Label ID="Label4" runat="server" Text="Building Num: "></asp:Label>
-            <asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-        </p>
         <p>
             <asp:Label ID="Label5" runat="server" Text="Location Num: "></asp:Label>
             <asp:TextBox ID="TextBox4" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
@@ -42,7 +39,14 @@
             <asp:TextBox ID="TextBox8" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
         </p>
         <p>
+            <asp:Label ID="Label4" runat="server" Text="Building Num: "></asp:Label>
+            <asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+        </p>
+        <p>
             <asp:Button ID="Insertion_Button" runat="server" OnClick="Insertion_Button_Click" Text="Submit" />
+        </p>
+        <p>
+        <asp:Label ID="Insertion_Success" runat="server" Font-Size="8pt" ForeColor="Blue" Visible="False"></asp:Label>
         </p>
         <p>
             &nbsp;</p>
@@ -56,12 +60,18 @@
             <asp:TextBox ID="TextBox10" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="Deletion_Button" runat="server" OnClick="Insertion_Button_Click" Text="Submit" />
+            <asp:Button ID="Deletion_Button" runat="server" OnClick="Deletion_Button_Click" Text="Submit" />
+        </p>
+        <p>
+        <asp:Label ID="Deletion_Success" runat="server" Font-Size="8pt" ForeColor="Blue" Visible="False"></asp:Label>
         </p>
         <p>
             &nbsp;</p>
         <p>
             <asp:Label ID="Label15" runat="server" Font-Size="20pt" Font-Underline="True" Text="Modify Location"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Modify_Conditions" runat="server" Font-Size="9pt" ForeColor="Blue" Text="One or more entries required"></asp:Label>
         </p>
         <p>
             <asp:Label ID="Label23" runat="server" Text="Location Name: "></asp:Label>
@@ -75,15 +85,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label32" runat="server" Text="New Building Name: "></asp:Label>
             <asp:TextBox ID="TextBox14" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>
-            <asp:Label ID="Label25" runat="server" Text="Building Num: "></asp:Label>
-            <asp:TextBox ID="TextBox15" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label33" runat="server" Text="New Building Num: "></asp:Label>
-            <asp:TextBox ID="TextBox16" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-        <p>
-            <asp:Label ID="Label26" runat="server" Text="Location Num: "></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>
+            &nbsp;<asp:Label ID="Label26" runat="server" Text="Location Num: "></asp:Label>
             <asp:TextBox ID="TextBox17" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label34" runat="server" Text="New Location Num: "></asp:Label>
@@ -114,14 +117,27 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label36" runat="server" Text="New Choices of Dining: "></asp:Label>
             <asp:TextBox ID="TextBox26" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+&nbsp;&nbsp;&nbsp;</p>
         <p>
-            <asp:Button ID="Modify_Button" runat="server" OnClick="Insertion_Button_Click" Text="Submit" />
+            <asp:Label ID="Label25" runat="server" Text="Building Num: "></asp:Label>
+            <asp:TextBox ID="TextBox15" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label33" runat="server" Text="New Building Num: "></asp:Label>
+            <asp:TextBox ID="TextBox16" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+        <p>
+            <asp:Button ID="Modify_Button" runat="server" OnClick="Modify_Button_Click" Text="Submit" />
+        </p>
+        <p>
+        <asp:Label ID="Modify_Success" runat="server" Font-Size="8pt" ForeColor="Blue" Visible="False"></asp:Label>
         </p>
         <p>
             &nbsp;</p>
         <p>
             <asp:Label ID="Label40" runat="server" Font-Size="20pt" Font-Underline="True" Text="Search"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Search_Conditions" runat="server" Font-Size="9pt" ForeColor="Blue" Text="One or more entries required"></asp:Label>
         </p>
         <p>
             <asp:Label ID="Label41" runat="server" Text="Location Name: "></asp:Label>
@@ -152,7 +168,10 @@
             <asp:TextBox ID="TextBox34" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="Search_Button_Click" runat="server" OnClick="Button1_Click" Text="Submit" />
+            <asp:Button ID="Search_Button" runat="server" OnClick="Search_Button_Click" Text="Submit" />
+        </p>
+        <p>
+        <asp:Label ID="Search_Success" runat="server" Font-Size="8pt" ForeColor="Blue" Visible="False"></asp:Label>
         </p>
         <p>
             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" OnSelectedIndexChanged="GridView2_SelectedIndexChanged">
@@ -201,4 +220,3 @@
     </form>
     </body>
 </html>
-

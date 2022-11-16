@@ -45,7 +45,7 @@ namespace WebApplication1
                 if (collection.Trim() != "")
                     com.Parameters.AddWithValue("@collection", collection);
                 if (exhibition.Trim() != "")
-                    com.Parameters.AddWithValue("@exhibtion", exhibition);
+                    com.Parameters.AddWithValue("@exhibition", exhibition);
                 com.Parameters.AddWithValue("@amount", amount);
                 if (sales.Trim() != "")
                     com.Parameters.AddWithValue("@sales", sales);
@@ -56,7 +56,7 @@ namespace WebApplication1
 
                 // Making labels visible
                 Label11.Visible = true; //making label visible
-                Label11.Text = "New Art Submission Successful.";
+                Label11.Text = "New Merchandise Submission Successful.";
             }
         }
 
@@ -112,7 +112,7 @@ namespace WebApplication1
                 if (collection.Trim() != "")
                     com.Parameters.AddWithValue("@collection", collection);
                 if (exhibition.Trim() != "")
-                    com.Parameters.AddWithValue("@exhibtion", exhibition);
+                    com.Parameters.AddWithValue("@exhibition", exhibition);
                 if (amount.Trim() != "")
                     com.Parameters.AddWithValue("@amount", amount);
                 if (sales.Trim() != "")

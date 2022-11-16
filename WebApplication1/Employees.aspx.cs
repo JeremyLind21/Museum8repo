@@ -252,5 +252,10 @@ namespace WebApplication1
                 Label47.Text = "Update successful";
             }
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -121,7 +121,7 @@
             <asp:Button ID="SearchEmployeeSubmit1" runat="server" Text="Search Employee(s)" OnClick="SearchEmployeeSubmit1_Click" />
             <br />
             <asp:Label ID="Label32" runat="server" Text="Invisible message" ForeColor="#FF5050" Visible="False"></asp:Label>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="3" ForeColor="Black" GridLines="Vertical" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="3" ForeColor="Black" GridLines="Vertical" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <AlternatingRowStyle BackColor="#CCCCCC" />
                 <Columns>
                     <asp:BoundField DataField="Name" HeaderText="Name" />

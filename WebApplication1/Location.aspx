@@ -40,7 +40,7 @@
         </p>
         <p>
             <asp:Label ID="Label4" runat="server" Text="Building Num: "></asp:Label>
-            <asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="Build_Num_Insert" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
         </p>
         <p>
             <asp:Button ID="Insertion_Button" runat="server" OnClick="Insertion_Button_Click" Text="Submit" />

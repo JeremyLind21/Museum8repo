@@ -6,9 +6,8 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body  style ="background-color:#ffffe0">
     <form id="form1" runat="server">
-    <body style ="background-color:#ffffe0">
         <div>
             <asp:Label ID="Label1" runat="server" Text="Location" Font-Overline="False" Font-Size="30pt"></asp:Label></div>
         <p>
@@ -40,7 +39,7 @@
         </p>
         <p>
             <asp:Label ID="Label4" runat="server" Text="Building Num: "></asp:Label>
-            <asp:TextBox ID="Build_Num_Insert" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="Build_Num_Insert" runat="server"></asp:TextBox>
         </p>
         <p>
             <asp:Button ID="Insertion_Button" runat="server" OnClick="Insertion_Button_Click" Text="Submit" />

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomePageMANAGER.aspx.cs" Inherits="WebApplication1.HomePageMANAGER" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ManagerHomePage.aspx.cs" Inherits="WebApplication1.HomePageMANAGER" %>
 
 <!DOCTYPE html>
 

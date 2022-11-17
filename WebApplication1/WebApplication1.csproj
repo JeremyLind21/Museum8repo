@@ -256,7 +256,6 @@
     <Content Include="Default.aspx" />
     <Content Include="Donations.aspx" />
     <Content Include="EmployeeMANAGER.aspx" />
-    <Content Include="Employees.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -275,7 +274,6 @@
     <Content Include="MembershipsMANAGER.aspx" />
     <Content Include="MembershipsRedirect.aspx" />
     <Content Include="Merchandise.aspx" />
-    <Content Include="MerchandiseCust.aspx" />
     <Content Include="SignInPage.aspx" />
     <Content Include="TransactReport.aspx" />
     <Content Include="WebForm2.aspx" />
@@ -386,13 +384,6 @@
     <Compile Include="EmployeeMANAGER.aspx.designer.cs">
       <DependentUpon>EmployeeMANAGER.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Employees.aspx.cs">
-      <DependentUpon>Employees.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Employees.aspx.designer.cs">
-      <DependentUpon>Employees.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -437,13 +428,6 @@
     </Compile>
     <Compile Include="Merchandise.aspx.designer.cs">
       <DependentUpon>Merchandise.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MerchandiseCust.aspx.cs">
-      <DependentUpon>MerchandiseCust.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MerchandiseCust.aspx.designer.cs">
-      <DependentUpon>MerchandiseCust.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignInPage.aspx.cs">

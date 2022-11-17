@@ -49,7 +49,7 @@ namespace WebApplication1
                 addMember.Connection = museumConn;
                 addMember.CommandType = System.Data.CommandType.StoredProcedure;
 
-                addMember.Parameters.AddWithValue("@NewMemberName", Fname + " " + Lname);
+                addMember.Parameters.AddWithValue("@NewMemberName", Fname.Trim() + " " + Lname.Trim());
                 addMember.Parameters.AddWithValue("@MemberPrice", Price);
 
 

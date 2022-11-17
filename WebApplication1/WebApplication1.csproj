@@ -252,7 +252,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="CustomerHomePage.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Donations.aspx" />
     <Content Include="EmployeeMANAGER.aspx" />
@@ -268,7 +267,6 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="HomePage.aspx" />
-    <Content Include="loginPage.aspx" />
     <Content Include="ManagerHomePage.aspx" />
     <Content Include="Membership.aspx" />
     <Content Include="MembershipsMANAGER.aspx" />
@@ -277,7 +275,6 @@
     <Content Include="SignInPage.aspx" />
     <Content Include="TransactReport.aspx" />
     <Content Include="WebForm2.aspx" />
-    <Content Include="FrontPage.aspx" />
     <Content Include="WebForm6.aspx" />
     <Content Include="Location.aspx" />
     <Content Include="Tickets.aspx" />
@@ -356,13 +353,6 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CustomerHomePage.aspx.cs">
-      <DependentUpon>CustomerHomePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CustomerHomePage.aspx.designer.cs">
-      <DependentUpon>CustomerHomePage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -393,13 +383,6 @@
     </Compile>
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="loginPage.aspx.cs">
-      <DependentUpon>loginPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="loginPage.aspx.designer.cs">
-      <DependentUpon>loginPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Membership.aspx.cs">
       <DependentUpon>Membership.aspx</DependentUpon>
@@ -478,13 +461,6 @@
     </Compile>
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrontPage.aspx.cs">
-      <DependentUpon>FrontPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrontPage.aspx.designer.cs">
-      <DependentUpon>FrontPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm6.aspx.cs">
       <DependentUpon>WebForm6.aspx</DependentUpon>

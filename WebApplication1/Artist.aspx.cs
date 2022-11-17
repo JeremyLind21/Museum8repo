@@ -38,7 +38,9 @@ namespace WebApplication1
 
                 com.Parameters.Add(param); //connecting parameteres to Stored Procedure command in SSMS
                 com.Parameters.Add(param2); //connecting parameteres to Stored Procedure command in SSMS
-                com.Parameters.Add(param3); //connecting parameteres to Stored Procedure command in SSMS
+                if (newArtistDOD.Trim() != "")
+                    com.Parameters.Add(param3); //connecting parameteres to Stored Procedure command in SSMS
+                
                 com.Parameters.Add(param4); //connecting parameteres to Stored Procedure command in SSMS
 
                 com.ExecuteNonQuery(); //executing the Stored Procedure 'INSERT' command
@@ -83,10 +85,11 @@ namespace WebApplication1
 
                 if (searchArtistID.Trim() != "")
                 {
-                    SqlParameter param = new SqlParameter("@SearchArtistName", searchArtistID);  //making 'param' the Name parameters
-                    com.Parameters.Add(param); //connecting parameteres to Stored Procedure command in SSMS
+                    //SqlParameter param = new SqlParameter("@SearchArtistName", searchArtistID);  //making 'param' the Name parameters
+                    com.Parameters.AddWithValue("searchArtistID", searchArtistID); //connecting parameteres to Stored Procedure command in SSMS
 
                 }
+                /*
                 if (searchArtistID.Trim() != "")
                 {
                     SqlParameter param2 = new SqlParameter("@SearchArtistDOB", searchArtistID); //making 'param2' the Name parameters
@@ -97,7 +100,7 @@ namespace WebApplication1
                     SqlParameter param3 = new SqlParameter("@SearchArtistDOD", searchArtistID); //making 'param3' the Name parameters
                     com.Parameters.Add(param3); //connecting parameteres to Stored Procedure command in SSMS
                 }
-
+                */
                 SqlDataReader rdr = com.ExecuteReader(); //executing the Stored Procedure 'SELECT' command
                 //here if SQL command doesn't work it should bring you to an error page
                 Label16.Visible = true; //making label visible
@@ -163,6 +166,11 @@ namespace WebApplication1
                 Label21.Visible = true; //making label visible
                 Label21.Text = "Modify Collection Submission Successful"; //making label saying successful
             }
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

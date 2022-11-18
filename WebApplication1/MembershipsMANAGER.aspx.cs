@@ -125,8 +125,8 @@ namespace WebApplication1
                 com.CommandType = System.Data.CommandType.StoredProcedure;
 
                 // Connecting variables to StoreProcedure's variables
-                if (searchMemberFname + " " + searchMemberLname.Trim() != "")
-                    com.Parameters.AddWithValue("@SearchMembername", searchMemberFname + " " + searchMemberLname);
+                if (searchMemberFname.Trim() + " " + searchMemberLname.Trim() != " ")
+                    com.Parameters.AddWithValue("@SearchMembername", searchMemberFname.Trim() + " " + searchMemberLname.Trim());
                 if (searchMemberID.Trim() != "")
                     com.Parameters.AddWithValue("@SearchMemberID", searchMemberID);
                 com.Parameters.AddWithValue("@SearchPrice", Price);
@@ -193,7 +193,7 @@ namespace WebApplication1
                 com.CommandType = System.Data.CommandType.StoredProcedure;
 
                 // Connecting variables to StoreProcedure's variables
-                if (oldMemberFname + " " + oldMemberLname.Trim() != "")
+                if (oldMemberFname.Trim() + " " + oldMemberLname.Trim() != " ")
                     com.Parameters.AddWithValue("@oldMemberName", oldMemberFname + " " + oldMemberLname);
                 if (oldMemberID.Trim() != "")
                     com.Parameters.AddWithValue("@oldMemberID", oldMemberID);
@@ -202,7 +202,7 @@ namespace WebApplication1
                     com.Parameters.AddWithValue("@oldMemberStart", oldMemberStart);
                 if (oldMemberEnd.Trim() != "")
                     com.Parameters.AddWithValue("@oldMemberEnd", oldMemberEnd);
-                if (newMemberFname + " " + newMemberLname.Trim() != "")
+                if (newMemberFname.Trim() + " " + newMemberLname.Trim() != " ")
                     com.Parameters.AddWithValue("@newMemberName", newMemberFname + " " + newMemberLname);
                 if (newMemberID.Trim() != "")
                     com.Parameters.AddWithValue("@newMemberID", newMemberID);

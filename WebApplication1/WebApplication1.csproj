@@ -246,6 +246,7 @@
     <Content Include="About.aspx" />
     <Content Include="ArtManage.aspx" />
     <Content Include="Artist.aspx" />
+    <Content Include="BUYSMerchandise.aspx" />
     <Content Include="Collections.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -254,11 +255,13 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="DirectorMANAGER.aspx" />
     <Content Include="Donations.aspx" />
     <Content Include="EmployeeMANAGER.aspx" />
+    <Content Include="ExhibitionReport.aspx" />
     <Content Include="ExhibitionsManager.aspx" />
     <Content Include="favicon.ico" />
-    <Content Include="FilmsDirectorManager.aspx" />
+    <Content Include="FilmsManager.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -342,6 +345,13 @@
     <Compile Include="Artist.aspx.designer.cs">
       <DependentUpon>Artist.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BUYSMerchandise.aspx.cs">
+      <DependentUpon>BUYSMerchandise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BUYSMerchandise.aspx.designer.cs">
+      <DependentUpon>BUYSMerchandise.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Collections.aspx.cs">
       <DependentUpon>Collections.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -363,6 +373,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DirectorMANAGER.aspx.cs">
+      <DependentUpon>DirectorMANAGER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DirectorMANAGER.aspx.designer.cs">
+      <DependentUpon>DirectorMANAGER.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Donations.aspx.cs">
       <DependentUpon>Donations.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -377,6 +394,13 @@
     <Compile Include="EmployeeMANAGER.aspx.designer.cs">
       <DependentUpon>EmployeeMANAGER.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExhibitionReport.aspx.cs">
+      <DependentUpon>ExhibitionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExhibitionReport.aspx.designer.cs">
+      <DependentUpon>ExhibitionReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExhibitionsManager.aspx.cs">
       <DependentUpon>ExhibitionsManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -384,12 +408,12 @@
     <Compile Include="ExhibitionsManager.aspx.designer.cs">
       <DependentUpon>ExhibitionsManager.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FilmsDirectorManager.aspx.cs">
-      <DependentUpon>FilmsDirectorManager.aspx</DependentUpon>
+    <Compile Include="FilmsManager.aspx.cs">
+      <DependentUpon>FilmsManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FilmsDirectorManager.aspx.designer.cs">
-      <DependentUpon>FilmsDirectorManager.aspx</DependentUpon>
+    <Compile Include="FilmsManager.aspx.designer.cs">
+      <DependentUpon>FilmsManager.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

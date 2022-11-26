@@ -247,6 +247,7 @@
     <Content Include="ArtManage.aspx" />
     <Content Include="Artist.aspx" />
     <Content Include="BUYSMerchandise.aspx" />
+    <Content Include="BUY_TICKETS.aspx" />
     <Content Include="Collections.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -351,6 +352,13 @@
     </Compile>
     <Compile Include="BUYSMerchandise.aspx.designer.cs">
       <DependentUpon>BUYSMerchandise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BUY_TICKETS.aspx.cs">
+      <DependentUpon>BUY_TICKETS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BUY_TICKETS.aspx.designer.cs">
+      <DependentUpon>BUY_TICKETS.aspx</DependentUpon>
     </Compile>
     <Compile Include="Collections.aspx.cs">
       <DependentUpon>Collections.aspx</DependentUpon>

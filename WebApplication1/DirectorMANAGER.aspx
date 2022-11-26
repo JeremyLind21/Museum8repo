@@ -23,8 +23,6 @@
             <asp:SqlDataSource ID="SqlDataSourceDirectorList" runat="server" ConnectionString="<%$ ConnectionStrings:MuseumDBConnectionString %>" SelectCommand="SELECT * FROM museumSchema.Director"></asp:SqlDataSource>
             <br />
             <br />
-            <br />
-            <br />
             Insert<br />
             <br />
             Director Name<br />
@@ -61,7 +59,8 @@
         <asp:Button ID="UpdateButton" runat="server" OnClick="UpdateButton_Click" Text="Update" />
         <br />
         <br />
-        Delete <br />
+        Delete
+        <br />
         <br />
         Director Name<br />
         <asp:TextBox ID="DeleteDirectorBox" runat="server"></asp:TextBox>

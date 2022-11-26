@@ -52,9 +52,15 @@ namespace WebApplication1
                         GridView1.DataBind();
 
                     }
-                    catch (SqlException)
+                    catch (SqlException ex)
                     {
-                        MessageBox.Show("Error Occured, Possible Cause: Incorrect Data Entry", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                        if(ex.Number == 51000)
+                        {
+                            MessageBox.Show("Sorry,We do not have enough stock to currently process your order", "Insufficient Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+                        }
+                        else
+                            MessageBox.Show("Error Occured, Possible Cause: Incorrect Data Entry", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                     } 
                 }
 

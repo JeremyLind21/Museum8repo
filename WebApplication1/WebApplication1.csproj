@@ -280,6 +280,7 @@
     <Content Include="MembershipsRedirect.aspx" />
     <Content Include="Merchandise.aspx" />
     <Content Include="SignInPage.aspx" />
+    <Content Include="ticketsReport.aspx" />
     <Content Include="TransactReport.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm6.aspx" />
@@ -482,6 +483,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ticketsReport.aspx.cs">
+      <DependentUpon>ticketsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ticketsReport.aspx.designer.cs">
+      <DependentUpon>ticketsReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="TransactReport.aspx.cs">
       <DependentUpon>TransactReport.aspx</DependentUpon>

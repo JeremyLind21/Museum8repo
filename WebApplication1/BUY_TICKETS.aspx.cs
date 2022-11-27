@@ -31,8 +31,8 @@ namespace WebApplication1
                 SqlCommand purchase = new SqlCommand("museumSchema.PurchaseTicket");
                 purchase.Connection = museumConn;
                 purchase.CommandType = System.Data.CommandType.StoredProcedure;
-                //try
-                //{
+                try
+                {
 
 
                     purchase.Parameters.AddWithValue("@CustName", custName);
@@ -42,18 +42,18 @@ namespace WebApplication1
                         purchase.Parameters.AddWithValue("@exhibition", exhibition);
                     if (CheckBox2.Checked == false)
                         purchase.Parameters.AddWithValue("@collection", collection);
-                    if(datePurchased != "")
+                    if (datePurchased != "")
                         purchase.Parameters.AddWithValue("@datePurchased", datePurchased);
                     purchase.ExecuteNonQuery();
                     MessageBox.Show("Purchase Successful", "PurchaseVerification", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
-                /*
                 }
+
                 catch (SqlException)
                 {
                     MessageBox.Show("Purchase Unsuccessful", "Failed Purchase", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 
                 }
-                */
+                
             }
 
         }

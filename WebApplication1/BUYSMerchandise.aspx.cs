@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Web.Optimization;
 
 namespace WebApplication1
 {
@@ -56,8 +57,8 @@ namespace WebApplication1
                     {
                         if(ex.Number == 51000)
                         {
-                            MessageBox.Show("Sorry,We do not have enough stock to currently process your order", "Insufficient Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
-
+                            // MessageBox.Show("Sorry,We do not have enough stock to currently process your order", "Insufficient Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                            
                         }
                         else
                             MessageBox.Show("Error Occured, Possible Cause: Incorrect Data Entry", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
